@@ -1,0 +1,23 @@
+head {
+    margin: 0px;
+    padding: auto;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+div {
+    color: blue;
+}
+
+footer li {
+    position: relative;
+    color: red;
+    display: inline;
+    vertical-align: sub;
+    margin: 30px;
+    top: -50%;
+    left: 25%;
+    height: 10%;
+    width: 0%;
+    padding: 0%;
+}
