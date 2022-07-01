@@ -23,4 +23,19 @@ public class RegistroControlador {
 		modelo.addAttribute("usuarios", servicio.listarUsuarios());
 		return "index";
 	}
+	
+	@GetMapping("/creditohipotecario")
+	public String creditoHipotecario() {
+		return "creditohipotecario";
+	}
+	
+	@GetMapping("/creditovivienda")
+	public String creditoVivienda() {
+		return "creditovivienda";
+	}
+	
+	@GetMapping("/creditolibreinversion")
+	public String creditoLibreInversion() {
+		return "creditolibreinversion";
+	}
 }

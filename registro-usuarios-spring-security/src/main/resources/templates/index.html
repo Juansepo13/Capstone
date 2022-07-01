@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-<head>
-<meta charset="utf-8">
-<title>Inicio</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
-<!-- Optional theme -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-	crossorigin="anonymous">
+<head>
+	<meta charset="utf-8">
+	<title>Inicio</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
+
 <body>
 
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+					aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#" th:href="@{/}">Registro E
 					inicio de sesión</a>
@@ -35,7 +30,7 @@
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Cerrar
-							sesión</a></li>
+							sesión</a><a>Bienvenido <span sec:authentication="principal.username"></span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,54 +40,74 @@
 	<br>
 
 	<div class="container">
-		<h1>CreditRisk</h1>
 		<br>
-		<h4>
-			Bienvenido <span sec:authentication="principal.username"></span>
-		</h4>
+		<br>
+		<br>
+		<h1>CreditRisk</h1>
+		<div class="dropdown">
+			<a class="btn btn-secondary dropdown-toggle" th:href="@{/creditohipotecario}" role="button"
+				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+				Credito Hipotecario
+			</a>
+
+		</div>
+
+		<div class="dropdown">
+			<a class="btn btn-secondary dropdown-toggle" th:href="@{/creditovivienda}" role="button"
+				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+				Credito De Vivienda
+			</a>
+
+		</div>
+
+		<div class="dropdown">
+			<a class="btn btn-secondary dropdown-toggle" th:href="@{/creditolibreinversion}" role="button"
+				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+				Credito Libre Inversion
+			</a>
+		</div>
+
+		<br>
 
 		<br> <br>
 
-		<table class="table table-striped table-bordered">
-			<thead class="table-dark">
-				<tr>
-					<th>ID</th>
-					<th>Nombre</th>
-					<th>Apellido</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr th:each="usuario : ${usuarios}">
-					<td th:text="${usuario.id}">ID</td>
-					<td th:text="${usuario.nombre}">ID</td>
-					<td th:text="${usuario.apellido}">ID</td>
-					<td th:text="${usuario.email}">ID</td>
-				</tr>
-			</tbody>
-		</table>
+
 	</div>
 
+	<div>
 
+		<h3>Credit Risk es una empresa analista de credito que busca impulsar a millones de personas en América Latina
+			Creemos y apostamos en el potencial de ese segmento que representa la economía de la región y que
+			hoy enfrenta muchas barreras para acceder a crédito y servicios financieros, aparte buscamos aglutinar
+			requisitos de la gran mayoria de bancos y ahorrar tiempo a los clientes que se encuentran en la busqueda de
+			cualquier credito.</h3>
+
+		<br>
+
+		<h4> simple, ser digital, siempre accesible</h4>
+		<h4>Nuestro ADN. Presente en nuestro producto, nuestra cultura y nuestra visión</h4>
+	</div>
+
+	<li>Preguntas</li>
+	<a>Terminos y condiciones</a>
+	<a>Politicas de privacidad</a>
+	<a>Preguntas frecuentes</a>
+	<li>Siguenos</li>
+	<a>Twitter</a>
+	<a>Facebook</a>
+	<a>Linkedin</a>
+	<a>Instagram</a>
+	<li>Conectate</li>
+	<a>Centro de ayuda</a>
+	<a>Trabaja Con nosotros</a>
+
+	<br>
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 		crossorigin="anonymous"></script>
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
