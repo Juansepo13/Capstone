@@ -38,4 +38,39 @@ public class RegistroControlador {
 	public String creditoLibreInversion() {
 		return "creditolibreinversion";
 	}
+	
+	@GetMapping("/adelantonomina")
+	public String adelantoNomina() {
+		return "adelantonomina";
+	}
+	
+	@GetMapping("/compracartera")
+	public String creditoCompraCartera() {
+		return "compracartera";
+	}
+	
+	@GetMapping("/creditovehiculo")
+	public String creditoVehiculo() {
+		return "creditovehiculo";
+	}
+	
+	@GetMapping("/contenidobancolombia")
+	public String contenidoBancolombia() {
+		return "contenidobancolombia";
+	}
+	
+	@GetMapping("/contenidobbva")
+	public String contenidoBBVA() {
+		return "contenidobbva";
+	}
+	
+	@GetMapping("/contenidodavivienda")
+	public String contenidodavivienda() {
+		return "contenidobancolombia";
+	}
+	
+	@GetMapping("/contenidobancobogota")
+	public String contenidoBancoBogota() {
+		return "contenidobancobogota";
+	}
 }
