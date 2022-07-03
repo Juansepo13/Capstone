@@ -2,11 +2,17 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
 <head>
+
 	<meta charset="utf-8"> 
 	<meta name="MobileOptimized" content="width" />
 	<meta name="HandheldFriendly" content="true" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Inicio</title>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -16,116 +22,135 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
 		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
 </head>
 
 <body>
-
-
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-					aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#" th:href="@{/}">Registro E
-					inicio de sesión</a>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+						aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="registro.html" th:href="@{/}">Registro</a>
+					<a class="navbar-brand" href="login.html" th:href="@{/}">Login</a>
+				</div>
 			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Cerrar
-							sesión</a><a>Bienvenido <span sec:authentication="principal.username"></span></a></li>
-				</ul>
+		</nav>
+	</header>
+
+	<div class="containers">
+		<br>
+		<br>
+		<br>
+		<h1>Welcome To CreditRisk</h1>
+			
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" href="adelantonomina.html" th:href="@{/adelantonomina.html}" role="button"
+					id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					Adelanto de Nomina</a>
 			</div>
+
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" th:href="@{/creditolibreinversion}" role="button"
+					id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					Credito Libre Inversion
+				</a>
+			</div>
+			
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" th:href="@{/creditovehiculo}" role="button"
+					id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					Credito De vehiculo
+				</a>
+			</div>
+			
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" th:href="@{/compracartera}" role="button"
+					id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					Credito Credito Compra de Cartera
+				</a>
+			</div>
+			
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" th:href="@{/adelantonomina}" role="button"
+					id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					Adelanto de nomina
+				</a>
+			</div>
+
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" th:href="@{/adelantonomina}" role="button"
+					id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					Adelanto de nomina
+				</a>
+			</div>
+
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" th:href="@{/adelantonomina}" role="button"
+					id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					Adelanto de nomina
+				</a>
+			</div>
+
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" th:href="@{/adelantonomina}" role="button"
+					id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					Adelanto de nomina
+				</a>
+			</div>
+
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" th:href="@{/adelantonomina}" role="button"
+					id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					Adelanto de nomina
+				</a>
+			</div>
+
+			
 		</div>
-	</nav>
 
-	<br>
-	<br>
+		<div>
 
-	<div class="container">
-		<br>
-		<br>
-		<br>
-		<h1>CreditRisk</h1>
-		
-		<div class="dropdown">
-			<a class="btn btn-secondary dropdown-toggle" th:href="@{/creditovivienda}" role="button"
-				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				Credito De Vivienda
-			</a>
-
-		</div>
-
-		<div class="dropdown">
-			<a class="btn btn-secondary dropdown-toggle" th:href="@{/creditolibreinversion}" role="button"
-				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				Credito Libre Inversion
-			</a>
-		</div>
-		
-		<div class="dropdown">
-			<a class="btn btn-secondary dropdown-toggle" th:href="@{/creditovehiculo}" role="button"
-				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				Credito De vehiculo
-			</a>
-		</div>
-		
-		<div class="dropdown">
-			<a class="btn btn-secondary dropdown-toggle" th:href="@{/compracartera}" role="button"
-				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				Credito Credito Compra de Cartera
-			</a>
-		</div>
-		
-		<div class="dropdown">
-			<a class="btn btn-secondary dropdown-toggle" th:href="@{/adelantonomina}" role="button"
-				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				Adelanto de nomina
-			</a>
-		</div>
-
-		<br>
-		<br>
-		<br>
-
-
-	</div>
-
-	<div>
-
-		<h3>Credit Risk es una empresa analista de credito que busca impulsar a millones de personas en América Latina
+		<p><strong>Credit Risk</strong> es una empresa analista de credito que busca impulsar a millones de personas en América Latina
 			Creemos y apostamos en el potencial de ese segmento que representa la economía de la región y que
 			hoy enfrenta muchas barreras para acceder a crédito y servicios financieros, aparte buscamos aglutinar
 			requisitos de la gran mayoria de bancos y ahorrar tiempo a los clientes que se encuentran en la busqueda de
-			cualquier credito.</h3>
-
+			cualquier credito.</p>
 		<br>
+		<p> simple, ser digital, siempre accesible</p>
 
-		<h4> simple, ser digital, siempre accesible</h4>
-		<h4>Nuestro ADN. Presente en nuestro producto, nuestra cultura y nuestra visión</h4>
+		<p>Nuestro ADN. Presente en nuestro producto, nuestra cultura y nuestra visión</p>
+		</div>
 	</div>
-
-	<li><a>Preguntas</a></li>
-	<li><a>Terminos y condiciones</a></li>
-	<li><a>Politicas de privacidad</a></li>
-	<li><a>Preguntas frecuentes</a></li>
-	<li><a>Siguenos</a></li>
-	<li><a>Twitter</a></li>
-	<li><a>Facebook</a></li>
-	<li><a>Linkedin</a></li>
-	<li><a>Instagram</a></li>
-	<li></a>Conectate</a></li>
-	<li><a>Centro de ayuda</a></li>
-	<li><a>Trabaja Con nosotros</a></li>
-
-	<br>
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-		crossorigin="anonymous"></script>
+		<footer>
+			<div class="columns-small" >
+				<div class"footer-bottom-clearfix">
+					<div role="navigation" class="">
+						<nav>	
+							<li><a>Preguntas</a></li>
+							<li><a>Terminos y condiciones</a></li>
+							<li><a>Politicas de privacidad</a></li>
+							<li><a>Preguntas frecuentes</a></li>
+							<li><a>Siguenos</a></li>
+							<li><a>Twitter</a></li>
+							<li><a>Facebook</a></li>
+							<li><a>Linkedin</a></li>
+							<li><a>Instagram</a></li>
+							<li><a>Conectate</a></li>
+							<li><a>Centro de ayuda</a></li>
+							<li><a>Trabaja Con nosotros</a></li>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<br>
+	</div>
 
 </body>
 
