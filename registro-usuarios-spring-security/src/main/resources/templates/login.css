@@ -1,50 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 header{
-    background-color: red;  
     height: 100px;
     width: 100%;
-    margin: 0px;
 }
-#container{
+nav li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+body{
+    background-color: #333:
+    font-family: sans-serif;
+    color: back;
+    boder-bottom: 1px solid black;
+}
+#containers{
     background: white;
     height: 1000px;
     width: 100%;
-    margin: 0px auto;
+    margin: 0px;
     text-align: left;
     line-height: 50px;
     color: black;
     border-bottom: 1px solid black;
-
 }
 .clearfix{
     clear: both;
 }
 footer {
     color: back;
-    background: lightgray;
-}
-{% comment %} #columns-small{
-    display: none;
     width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.5;
-    transition: opacity 0.2s ease-in-out;
-    pointer-events: none;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-touch-callout: none;
-
-} {% endcomment %}
+    height: 60px;
+}
