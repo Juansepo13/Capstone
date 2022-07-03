@@ -24,11 +24,6 @@ public class RegistroControlador {
 		return "index";
 	}
 	
-	@GetMapping("/creditohipotecario")
-	public String creditoHipotecario() {
-		return "creditohipotecario";
-	}
-	
 	@GetMapping("/creditovivienda")
 	public String creditoVivienda() {
 		return "creditovivienda";
@@ -65,8 +60,8 @@ public class RegistroControlador {
 	}
 	
 	@GetMapping("/contenidodavivienda")
-	public String contenidodavivienda() {
-		return "contenidobancolombia";
+	public String contenidoDavivienda() {
+		return "contenidodavivienda";
 	}
 	
 	@GetMapping("/contenidobancobogota")
