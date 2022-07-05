@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
 <head>
@@ -37,8 +36,6 @@
 		</div>
 	</nav>
 
-
-
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -49,36 +46,61 @@
 	<br>
 	<br>
 	<br>
-	<h1>Credito Compra De Cartera</h1>
+	
+	<h1>DOCUMENTOS PARA SOLICITUD DE CREDITO</h1>
 
-	<nav>
-		<div class="dropdown">
-			<a class="btn btn-secondary dropdown-toggle" th:href="@{/contenidoccbancolombia}" role="button"
-				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				BANCOLOMBIA
-			</a>
-	</nav>
+<table>
+<tr>
+  <td><strong>EMPLEADOS</strong></td>
+  <td><strong>PENSIONADOS</strong></td>
+  <td><strong>INDEPENDIENTES</strong></td>
+</tr>
 
-	<nav>
-		<a class="btn btn-secondary dropdown-toggle" th:href="@{/contenidoccbbva}" role="button"
-				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				BBVA
-			</a>
-	</nav>	
+<tr>
+  <td>Solicitud de vinculacion como persona natural</td>
+  <td>Solicitud de vinculacion como persona natural</td>
+  <td>Solicitud de vinculacion como persona natural</td>
+</tr>
 
-	<nav>
-		<a class="btn btn-secondary dropdown-toggle" th:href="@{/contenidoccdavivienda}" role="button"
-				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				DAVIVIENDA
-			</a>
-	</nav>
+<tr>
+  <td>Fotocopia del documento ampliado al 150%</td>
+  <td>Fotocopia del documento ampliado al 150%</td>
+  <td>Fotocopia del documento ampliado al 150%</td>
+</tr>
 
-	<nav>
-		<a class="btn btn-secondary dropdown-toggle" th:href="@{/contenidoccbancobogota}" role="button"
-				id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-				BANCO DE BOGOTA
-			</a>
-	</nav>
+<tr>
+  <td>Certificado laboral con vigencia maxima a 90 dias indicando cargo, salario, tiempo de servicio y tipo de contrato.</td>
+  <td>Fotocopia del ultimo comprobante de pago, de nomina o pension.</td>
+  <td>Fotocopia del certificado de ingresos y/o declaracion de renta.</td>
+</tr>
+
+<tr>
+  <td>Fotocopia del ultimo comprobante de pago, de nomina o pension, si los ingresos son variables, adjuntar comprobante de los ultimos tres meses.</td>
+  <td>Contratos, certificados o documentos que acrediten otros ingresos.</td>
+  <td>Contratos, certificados o documentos que acrediten otros ingresos.</td>
+</tr>
+
+<tr>
+  <td>Contratos, certificados o documentos que acrediten otros ingresos.</td>
+  <td>Fotocopia de la orden de matricula</td>
+  <td>extractos bancarios de los ultimos tres meses.</td>
+</tr>
+
+<tr>
+  <td></td>
+  <td></td>
+  <td>Certificado de camara y comercio vigente.</td>
+</tr>
+
+<tr>
+  <td></td>
+  <td></td>
+  <td>Fotocopia de la orden de matricula</td>
+</tr>
+</table>
+
+<a th:href="@{https://www.bbva.com.co/personas/productos/prestamos/vivienda/hipotecario-sostenible.html}">Si desea solicitar su credito con BBVA click aqui</a>
+
 </body>
 
 </html>
