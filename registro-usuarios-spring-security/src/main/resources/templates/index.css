@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 100px;
+    width: 50px;
+}
+nav li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+body{
+    background-color: #333:
+    font-family: sans-serif;
+    color: back;
+    boder-bottom: 1px solid black;
+}
+#containers{
+    background: white;
+    height: 1000px;
+    width: 100%;
+    margin: 0px;
+    text-align: left;
+    line-height: 50px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.clearfix{
+    clear: both;
+}
+footer {
+    color: back;
+    width: 100%;
+    height: 60px;
+}
