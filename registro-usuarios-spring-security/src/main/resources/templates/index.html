@@ -1,186 +1,155 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
-	<head>
+<head>
 
-		<meta charset="utf-8"> 
-		<meta name="MobileOptimized" content="width" />
-		<meta name="HandheldFriendly" content="true" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="MobileOptimized" content="width" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
+	</link>
 
-		<title>Inicio</title>
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	<title>Inicio</title>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 		crossorigin="anonymous"></script>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<link rel="stylesheet" href="static/css/" integrity="" crossorigin="">
+	<link rel="stylesheet" href="static/css/" integrity="" crossorigin="">
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-			integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		
-	</head>
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<body>
-		<!--Caja menu contenido aside y footer-->
-		<div class="containers">
+</head>
 
-			<header>
-				<nav class="navbar navbar-inverse navbar-fixed-top">
-					<div class="container">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-								aria-expanded="false" aria-controls="navbar">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span> 
-								<span class="icon-bar"></span> <span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="registro.html" th:href="@{/}">Registro</a>
-							<a class="navbar-brand" href="login.html" th:href="@{/}">Login</a>
-						</div>
+<body>
+	<!--Caja menu contenido aside y footer-->
+	<div class="containers">
+
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#" th:href="@{/}">Registration and Login</a>
 					</div>
-				</nav>
-			</header>
-			<br>
-			<br>
-			<br>
-			<h1>Welcome To CreditRisk</h1>
-			
-			<!--Botones superiores a la izquierda-->
-				<nav>
-					<ul>
-						<li>		
-							<div class="dropdown">
-								<a class="btn btn-secondary dropdown-toggle" href="adelantonomina.html" th:href="@{/adelantonomina.html}" role="button"
-									id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-									Adelanto de Nomina</a>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown">
-								<a class="btn btn-secondary dropdown-toggle" href="compradecartera.html" th:href="@{/compracartera.html}" role="button"
-									id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-									Credito Compra de Cartera
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown">
-								<a class="btn btn-secondary dropdown-toggle" href="contenidobancobogota.html" th:href="@{/contenidobancobogota.html}" role="button"
-									id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-									Creditos con Banco Bogota
-								</a>
-							</div>
-						</li>
-						<li>	
-							<div class="dropdown">
-								<a class="btn btn-secondary dropdown-toggle" href="contenidobancolombia.html" th:href="@{/contenidobancolombia.html}" role="button"
-									id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-									Creditos Con Bancolombia
-								</a>
-							</div>
-						</li>						
-						<li>							
-							<div class="dropdown">
-								<a class="btn btn-secondary dropdown-toggle" href="contenidobbva.html" th:href="@{/contenidobbva.html}" role="button"
-									id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-									Creditos con Banco BBVA
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown">
-								<a class="btn btn-secondary dropdown-toggle" href="contenidodavivienda.html" th:href="@{/contenidodavivienda.html}" role="button"
-									id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-									Creditos con Davivienda
-								</a>
-							</div>
-						</li>
-						<li>	
-							<div class="dropdown">
-								<a class="btn btn-secondary dropdown-toggle" href="creditolibreinversion.html" th:href="@{/creditolibreinversion.html}" role="button"
-									id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-									Credito de Libre Inversión
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown">
-								<a class="btn btn-secondary dropdown-toggle" href="creditovehiculo.html" th:href="@{/creditovehiculo.html}" role="button"
-									id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-									Credito para Vehiculo
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown">
-								<a class="btn btn-secondary dropdown-toggle" href="creditovivienda.html" th:href="@{/creditovivienda.html}" role="button"
-									id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-									Credito para Vivienda
-								</a>
-							</div>
-						</li>
-					</ul>	
-				</nav>
-			<div class="clearfix"></div>
-			<!--Lugar donde se ponen todos los temas y contenidos parrafos-->
-			<section id="content">
-				
-				<article class="article">
-					<p><strong>Credit Risk</strong> es una empresa analista de credito que busca impulsar a millones de personas en América Latina Creemos y apostamos en el potencial de ese segmento que representa la economía de la región y que hoy enfrenta muchas carreras para acceder a crédito y servicios financieros, aparte buscamos aglutinar requisitos de la gran mayoria de bancos y ahorrar tiempo a los clientes que se encuentran en la busqueda de cualquier credito.</p>
-				</article>
-				
-				<article class="article">
-					<p> simple, ser digital, siempre accesible</p>
-				</article>
-
-				<article class="article">
-					<p>Nuestro ADN. Presente en nuestro producto, nuestra cultura y nuestra visión</p>
-				</article>
-				
-			</section>
-
-			<aside>
-				<h2>Barra Lateral</h2> 
-				<form>
-					<input type="text">
-					<input type="submit" value="Buscar" />
-				<form>
-			</aside>
-
-			<div class="clearfix"></div>
-			<footer>
-				<div class="columns-small" >
-					<div class"footer-bottom-clearfix">
-						<div role="navigation" class="">
-							<nav>	
-								<li><a href="index.html" th:href="@{/}">Location</a></li>
-								<li><a href="index.html" th:href="@{/}">Contact Us</a></li>
-								<li><a href="index.html" th:href="@{/}">Privacy </a></li>
-								<li><a href="index.html" th:href="@{/}">Secutiry </a></li>
-								<li><a href="index.html" th:href="@{/}">Sitemap </a></li>
-								<li><a href="index.html" th:href="@{/}">Share Your Feedback </a></li>
-								<li><a href="index.html" th:href="@{/}">Preguntas</a></li>
-								<li><a href="index.html" th:href="@{/}">Terminos y condiciones</a></li>
-								<li><a href="index.html" th:href="@{/}">Politicas de privacidad</a></li>
-								<li><a href="index.html" th:href="@{/}">Preguntas frecuentes</a></li>
-								<li><a href="index.html" th:href="@{/}">Siguenos</a></li>
-								<li><a href="index.html" th:href="@{/}">Twitter</a></li>
-								<li><a href="index.html" th:href="@{/}">Facebook</a></li>
-								<li><a href="index.html" th:href="@{/}">Linkedin</a></li>
-								<li><a href="index.html" th:href="@{/}">Instagram</a></li>
-								<li><a href="index.html" th:href="@{/}">Conectate</a></li>
-								<li><a href="index.html" th:href="@{/}">Centro de ayuda</a></li>
-								<li><a href="index.html" th:href="@{/}">Trabaja Con nosotros</a></li>
-							</nav>
-						</div>
+					<div id="navbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout
+								</a></li>
+						</ul>
 					</div>
 				</div>
-			</footer>
+			</nav>
+		</header>
+		<br>
+		<br>
+		<br>
+		<h1 class="wc">Welcome To CreditRisk</h1>
+
+		<br>
+
+		<!--Botones superiores a la izquierda-->
+		<nav>
+			<ul>
+				<li class="an">
+					<div class="dropdown">
+						<a class="btn-secondary" href="adelantonomina.html" th:href="@{/adelantonomina}" role="button"
+							id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							Adelanto de Nomina</a>
+					</div>
+				</li>
+				<li class="an">
+					<div class="dropdown">
+						<a class="btn-secondary" href="compradecartera.html" th:href="@{/compracartera}" role="button"
+							id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							Credito Compra de Cartera
+						</a>
+					</div>
+				</li>
+
+				<li class="an">
+					<div class="dropdown">
+						<a class="btn-secondary" href="creditolibreinversion.html" th:href="@{/creditolibreinversion}"
+							role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							Credito de Libre Inversión
+						</a>
+					</div>
+				</li>
+				<li class="an">
+					<div class="dropdown">
+						<a class="btn-secondary" href="creditovehiculo.html" th:href="@{/creditovehiculo}" role="button"
+							id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							Credito para Vehiculo
+						</a>
+					</div>
+				</li>
+				<li class="an">
+					<div class="dropdown">
+						<a class="btn-secondary" href="creditovivienda.html" th:href="@{/creditovivienda}" role="button"
+							id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							Credito para Vivienda
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+		<!--Lugar donde se ponen todos los temas y contenidos parrafos-->
+		<section id="content">
+
+			<article class="article">
+				<p><strong>Credit Risk</strong> is a credit analyst company that seeks to promote millions of people in
+					Latin America. We believe and are committed to the potential of this segment that represents the
+					economy of the region and that today faces many races to access credit and financial services, apart
+					from seeking to bring together requirements of the vast majority of banks and save time for
+					customers who are in search of any credit.</p>
+			</article>
+
+			<article class="article">
+				<p> simple, be digital, always accessible</p>
+			</article>
+
+			<article class="article">
+				<p>Our DNA. Present in our product, our culture and our vision</p>
+			</article>
+
+		</section>
+
+		<div class="clearfix"></div>
+		<footer class="columns-small">
+			<div class="columns-small">
+				<div class"footer-bottom-clearfix">
+					<div role="navigation" class="columns-small">
+						<nav>
+							<li class="li"><a href="index.html" th:href="@{/}">Share Your Feedback </a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Preguntas</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Terminos y condiciones</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Politicas de privacidad</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Preguntas frecuentes</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Siguenos</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Twitter</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Facebook</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Linkedin</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Instagram</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Conectate</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Centro de ayuda</a></li>
+							<li class="li"><a href="index.html" th:href="@{/}">Trabaja Con nosotros</a></li>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
 		</di>
-	</body>
+</body>
+
 </html>

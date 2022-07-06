@@ -1,0 +1,40 @@
+ a.btn-secondary {
+	font-size: 20px;
+	color: grey;
+	display: inline;
+	margin: 0;
+	padding: 20px;
+	font-weight: bold;
+
+}
+
+h1.wc {
+	font-size: 50px;
+	color: grey;
+	margin: 0;
+	padding: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+li.an {
+	display: inline;
+	list-style-type: none;
+	display: inline;
+	padding-right: 5px;
+}
+ li.li {
+	display: inline;
+	color: grey;
+	margin: 0;
+	padding: 20px;
+	font-weight: bold;
+}
+
+article.article {
+	margin: 0;
+	padding: 20px;
+	font-weight: bold;
+	color: grey;
+}
+
