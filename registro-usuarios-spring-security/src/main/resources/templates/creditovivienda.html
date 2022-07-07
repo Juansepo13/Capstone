@@ -30,13 +30,11 @@
 					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" th:href="@{/}">Registro E
-					inicio de sesión</a>
+				<a class="navbar-brand" href="#" th:href="@{/}">Register and Login</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Cerrar
-							sesión</a><a>Bienvenido <span sec:authentication="principal.username"></span></a></li>
+					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 				</ul>
 			</div>
 		</div>
@@ -54,7 +52,7 @@
 	<br>
 	<br>
 	<br>
-	<h1>Credito De Vivienda</h1>
+	<h1>Credit For House</h1>
 
 	<nav>
 		<div class="dropdown">
